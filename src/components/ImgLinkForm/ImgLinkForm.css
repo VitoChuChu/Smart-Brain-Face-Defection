@@ -1,0 +1,11 @@
+div.urlbackground {
+  height: 20vh;
+  background-image: url("./bk.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widthInput {
+  width: 20em;
+}/*# sourceMappingURL=ImgLinkForm.css.map */

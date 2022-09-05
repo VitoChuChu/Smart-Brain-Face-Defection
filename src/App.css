@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .widthImg {
+    width: 350px;
+  }
+}

@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+nav p {
+  font-size: 1.25rem;
+  padding: 0 1rem 0 1rem;
+}/*# sourceMappingURL=Nav.css.map */
