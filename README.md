@@ -1,20 +1,30 @@
-# Hello!! Welcome to Smart Brain!
+# Smart Brain --Face Detection
 
-This is a website that AI will detect the faces on your image. Please have a try!!
+---
 
-## Web functions : 
-1. Sign in / Sign out.
-2. Register.
-3. Account delete.
-4. Face detection.
-5. Count record.
+Hi There! Welcome to **Smart Brain**!
 
+This website has the function to detect if there is any face exist on the image you want to know with AI.
+Also, you can register an account so that you can record how many image you checked. (Exist => +1 count)
 
-## Tooling via : 
-1. React
-2. Bootstrap
-3. PostgresSQL
-4. Express 
-5. Bcrypt
-6. API - Clarifai
+**Hurry! Come and try it!**
 
+<img src="https://i.imgur.com/mylrgKh.png" alt="Vmovie welcome page" width="100%"/>
+
+##🤘What you can do here🤘
+
+- Input a image Link and AI will check if there is any face exist.
+- Register an account to record how many images that you have checked and faces existed.
+- Sign in anytime when you want to play.
+- Delect the account if you don't want to play anymore.
+
+## ㊙️ Libraries & FrameWorks & Tool ㊙️
+
+- React.js
+- Bootstrap 5
+- Fetch
+- Clarifai (AI resource)
+- PostgreSQL
+- DBeaver
+- Github
+- Heroku
