@@ -12,9 +12,18 @@
 .pointer {
   cursor: pointer;
 }
+.pointer:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
 
 @media screen and (max-width: 550px) {
   .widthImg {
     width: 350px;
   }
+}
+
+.zoomIn:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }

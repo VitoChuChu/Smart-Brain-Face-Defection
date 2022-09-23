@@ -8,6 +8,12 @@ const Nav = ({ status, onRouteChange }) => {
         <p className="pointer" onClick={() => onRouteChange("signout")}>
           Sign Out
         </p>
+        <p
+          className="pointer text-danger"
+          onClick={() => onRouteChange("delete")}
+        >
+          Don't want to play anymore
+        </p>
       </nav>
     );
   } else {

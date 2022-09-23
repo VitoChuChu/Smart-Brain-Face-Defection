@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import "./ImgLinkForm.css";
 
-const ImgLinkForm = ({ onInputChange, onDefectButton }) => {
+const ImgLinkForm = ({ onInputChange, onDefectButton, user }) => {
   return (
     <div className="container">
       <div className="row cc">
@@ -10,12 +10,13 @@ const ImgLinkForm = ({ onInputChange, onDefectButton }) => {
           <Logo />
         </div>
         <div className="col-12">
-          <h4>Vito, Here is your current entry count : </h4>
-          <h2>Score</h2>
+          <div className="fs-4">{`${user.name}, Here is your current entry count : `}</div>
+          <div className="fs-2">{user.entries}</div>
           <p className="m-1">AI brain is ready to detect the faces</p>
         </div>
-        <div className="col-10 col-xl-10 urlbackground shadow">
+        <div className="col-10 col-xl-10 urlbackground shadow rounded">
           <input
+            id="input"
             className="p-1 widthInput"
             type="text"
             onChange={onInputChange}

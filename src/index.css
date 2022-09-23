@@ -1,4 +1,5 @@
 * {
+  z-index: 1;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,7 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, #73dce2, #e2de83, #d98673);
+  background: linear-gradient(to right, #73dce2 0%, #e2de83 51%, #d98673 100%);
+  animation: bkcolor 5s ease infinite;
   width: 100%;
   height: 100%;
 }

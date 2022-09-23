@@ -10,7 +10,7 @@ const FaceRecognition = ({ imageUrl, boxes }) => {
           src={imageUrl}
           alt=""
           id="inputImage"
-          width={"500px"}
+          max-width={"500px"}
           height={"auto"}
         />
         {boxes.map((box, i) => {
