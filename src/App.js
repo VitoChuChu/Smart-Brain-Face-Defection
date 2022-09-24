@@ -70,7 +70,7 @@ function App() {
   const deleteUser = () => {
     let deleteEmail = prompt("Please enter your email : ");
     if (user.email === deleteEmail) {
-      fetch("http://localhost:3000/delete", {
+      fetch("https://smart-brain-backend-2022-09-24.herokuapp.com/delete", {
         method: "delete",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ email: deleteEmail }),
@@ -87,13 +87,14 @@ function App() {
   };
 
   const cleanInput = () => {
+    setBoxes([]);
+    displayFaceBox(faceLocation());
     document.getElementById("input").value = "";
   };
 
   const onDefectButton = () => {
     setImageUrl(input);
-
-    fetch("http://localhost:3000/imageUrl", {
+    fetch("https://smart-brain-backend-2022-09-24.herokuapp.com/imageUrl", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -105,7 +106,7 @@ function App() {
       .then((resp) => resp.json())
       .then((resp) => {
         if (resp.status.code === 10000) {
-          fetch("http://localhost:3000/image", {
+          fetch("https://smart-brain-backend-2022-09-24.herokuapp.com/image", {
             method: "put",
             headers: {
               "Content-Type": "application/json",
