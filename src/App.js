@@ -87,8 +87,7 @@ function App() {
   };
 
   const cleanInput = () => {
-    setBoxes([]);
-    displayFaceBox(faceLocation());
+    displayFaceBox([]);
     document.getElementById("input").value = "";
   };
 
@@ -105,7 +104,7 @@ function App() {
     })
       .then((resp) => resp.json())
       .then((resp) => {
-        if (resp.status.code === 10000) {
+        if (resp.outputs[0].data.regions) {
           fetch("https://smart-brain-backend-2022-09-24.herokuapp.com/image", {
             method: "put",
             headers: {
@@ -163,9 +162,6 @@ function App() {
   };
   const options = {
     fpsLimit: 60,
-    interactivity: {
-      detect_on: "canvas",
-    },
     particles: {
       number: {
         value: 30,
