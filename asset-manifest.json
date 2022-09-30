@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Smart-Brain-Face-Defection/static/css/main.483c2671.css",
-    "main.js": "/Smart-Brain-Face-Defection/static/js/main.8e46ff27.js",
+    "main.js": "/Smart-Brain-Face-Defection/static/js/main.1fdb3aed.js",
     "static/media/bk.png": "/Smart-Brain-Face-Defection/static/media/bk.e22b6a37c77f68016554.png",
     "static/media/brian.png": "/Smart-Brain-Face-Defection/static/media/brian.fddaea9e4467bb814b4c.png",
     "index.html": "/Smart-Brain-Face-Defection/index.html",
     "main.483c2671.css.map": "/Smart-Brain-Face-Defection/static/css/main.483c2671.css.map",
-    "main.8e46ff27.js.map": "/Smart-Brain-Face-Defection/static/js/main.8e46ff27.js.map"
+    "main.1fdb3aed.js.map": "/Smart-Brain-Face-Defection/static/js/main.1fdb3aed.js.map"
   },
   "entrypoints": [
     "static/css/main.483c2671.css",
-    "static/js/main.8e46ff27.js"
+    "static/js/main.1fdb3aed.js"
   ]
 }
