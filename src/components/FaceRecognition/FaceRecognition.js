@@ -4,9 +4,8 @@ import "./FaceRacegnition.css";
 const FaceRecognition = ({ imageUrl, boxes }) => {
   return (
     <div className="cc">
-      <div className="position-relative">
+      <div className="position-relative m-2 p-2">
         <img
-          className="p-2 m-2 widthImg"
           src={imageUrl}
           alt=""
           id="inputImage"

@@ -135,6 +135,7 @@ function App() {
     const width = Number(image.clientWidth);
     const height = Number(image.clientHeight);
     const facePoints = data.outputs[0].data.regions;
+    console.log(facePoints);
     const facePointsLocation = facePoints.map((x) => {
       return x.region_info.bounding_box;
     });
