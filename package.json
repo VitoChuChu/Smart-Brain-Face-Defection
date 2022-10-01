@@ -8,13 +8,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^4.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-parallax-tilt": "^1.7.62",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.67",
     "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.3.2",
     "tsparticles": "^2.3.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.0.2"
   },
   "scripts": {
     "predeploy": "npm run build",

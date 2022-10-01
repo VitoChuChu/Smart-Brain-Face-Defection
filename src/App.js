@@ -24,31 +24,6 @@ function App() {
     joined: "",
   });
 
-  const initialState = () => {
-    setImageUrl("");
-    setInput("");
-    setBoxes([]);
-    setRoute("signin");
-    setStatue(false);
-    setUser({
-      id: "",
-      name: "",
-      email: "",
-      entries: 0,
-      joinedDate: "",
-    });
-  };
-
-  const loadUser = (data) => {
-    setUser({
-      id: data.id,
-      name: data.name,
-      email: data.email,
-      entries: data.entries,
-      joined: data.joined,
-    });
-  };
-
   const onStatusChange = (x) => {
     setStatue(x);
   };
@@ -80,6 +55,30 @@ function App() {
       alert("Email is incorrect");
       initialState();
     }
+  };
+  const initialState = () => {
+    setImageUrl("");
+    setInput("");
+    setBoxes([]);
+    setRoute("signin");
+    setStatue(false);
+    setUser({
+      id: "",
+      name: "",
+      email: "",
+      entries: 0,
+      joinedDate: "",
+    });
+  };
+
+  const loadUser = (data) => {
+    setUser({
+      id: data.id,
+      name: data.name,
+      email: data.email,
+      entries: data.entries,
+      joined: data.joined,
+    });
   };
 
   const onInputChange = (e) => {
