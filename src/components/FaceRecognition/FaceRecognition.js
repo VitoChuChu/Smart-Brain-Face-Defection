@@ -5,13 +5,7 @@ const FaceRecognition = ({ imageUrl, boxes }) => {
   return (
     <div className="cc">
       <div className="position-relative m-2 p-2">
-        <img
-          src={imageUrl}
-          alt=""
-          id="inputImage"
-          width={"500px"}
-          height={"auto"}
-        />
+        <img className="imgSize" src={imageUrl} alt="" id="inputImage" />
         {boxes.map((box, i) => {
           const { leftCol, topRow, rightCol, bottomRow } = box;
           return (
@@ -24,7 +18,11 @@ const FaceRecognition = ({ imageUrl, boxes }) => {
                 right: rightCol,
                 bottom: bottomRow,
               }}
-            ></div>
+            >
+              <h3 className="numberPosition" style={{ color: "green" }}>
+                {i + 1}
+              </h3>
+            </div>
           );
         })}
       </div>

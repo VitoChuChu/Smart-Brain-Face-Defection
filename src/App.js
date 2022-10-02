@@ -11,12 +11,13 @@ import { loadFull } from "tsparticles";
 import "./App.css";
 
 function App() {
-  let [status, setStatue] = useState(false);
-  let [route, setRoute] = useState("signin");
-  let [input, setInput] = useState();
-  let [imageUrl, setImageUrl] = useState("");
-  let [boxes, setBoxes] = useState([]);
-  let [user, setUser] = useState({
+  const [status, setStatue] = useState(false);
+  const [route, setRoute] = useState("signin");
+  const [input, setInput] = useState();
+  const [imageUrl, setImageUrl] = useState("");
+  const [boxes, setBoxes] = useState([]);
+  const [counts, setCounts] = useState(null);
+  const [user, setUser] = useState({
     id: "",
     name: "",
     email: "",
@@ -103,7 +104,9 @@ function App() {
     })
       .then((resp) => resp.json())
       .then((resp) => {
+        console.log(resp.outputs[0].data.regions);
         if (resp.outputs[0].data.regions) {
+          setCounts(resp.outputs[0].data.regions.length);
           fetch("https://smart-brain-backend-2022-09-24.herokuapp.com/image", {
             method: "put",
             headers: {
@@ -111,6 +114,7 @@ function App() {
             },
             body: JSON.stringify({
               id: user.id,
+              counts: resp.outputs[0].data.regions.length,
             }),
           })
             .then((resp) => resp.json())
@@ -120,6 +124,7 @@ function App() {
             })
             .catch(console.log);
         } else {
+          setCounts(null);
           alert("There is no face on the image!!!");
         }
         displayFaceBox(faceLocation(resp));
@@ -135,7 +140,6 @@ function App() {
     const width = Number(image.clientWidth);
     const height = Number(image.clientHeight);
     const facePoints = data.outputs[0].data.regions;
-    console.log(facePoints);
     const facePointsLocation = facePoints.map((x) => {
       return x.region_info.bounding_box;
     });
@@ -250,6 +254,7 @@ function App() {
             onInputChange={onInputChange}
             onDefectButton={onDefectButton}
             user={user}
+            counts={counts}
           />
           <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
         </div>

@@ -5,3 +5,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.imgSize {
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .imgSize {
+    width: auto;
+  }
+}
