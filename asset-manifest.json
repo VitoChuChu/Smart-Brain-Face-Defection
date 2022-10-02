@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Smart-Brain-Face-Defection/static/css/main.483c2671.css",
-    "main.js": "/Smart-Brain-Face-Defection/static/js/main.139d5729.js",
+    "main.css": "/Smart-Brain-Face-Defection/static/css/main.873a7fcf.css",
+    "main.js": "/Smart-Brain-Face-Defection/static/js/main.a1e8cf19.js",
     "static/media/bk.png": "/Smart-Brain-Face-Defection/static/media/bk.e22b6a37c77f68016554.png",
     "static/media/brian.png": "/Smart-Brain-Face-Defection/static/media/brian.fddaea9e4467bb814b4c.png",
     "index.html": "/Smart-Brain-Face-Defection/index.html",
-    "main.483c2671.css.map": "/Smart-Brain-Face-Defection/static/css/main.483c2671.css.map",
-    "main.139d5729.js.map": "/Smart-Brain-Face-Defection/static/js/main.139d5729.js.map"
+    "main.873a7fcf.css.map": "/Smart-Brain-Face-Defection/static/css/main.873a7fcf.css.map",
+    "main.a1e8cf19.js.map": "/Smart-Brain-Face-Defection/static/js/main.a1e8cf19.js.map"
   },
   "entrypoints": [
-    "static/css/main.483c2671.css",
-    "static/js/main.139d5729.js"
+    "static/css/main.873a7fcf.css",
+    "static/js/main.a1e8cf19.js"
   ]
 }
